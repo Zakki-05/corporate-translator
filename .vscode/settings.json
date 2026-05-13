@@ -1,7 +1,0 @@
-{
-  "css.lint.unknownAtRules": "ignore",
-  "tailwindCSS.includeLanguages": {
-    "plaintext": "javascript",
-    "html": "html"
-  }
-}
