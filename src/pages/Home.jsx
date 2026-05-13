@@ -9,6 +9,7 @@ import QuizPreview from '../components/QuizPreview';
 import FlashcardPreview from '../components/FlashcardPreview';
 import Statistics from '../components/Statistics';
 import Testimonials from '../components/Testimonials';
+import DeveloperSection from '../components/DeveloperSection';
 import FAQ from '../components/FAQ';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
@@ -27,6 +28,7 @@ const Home = () => {
         <FlashcardPreview />
         <Statistics />
         <Testimonials />
+        <DeveloperSection />
         <FAQ />
         <CTA />
       </div>
