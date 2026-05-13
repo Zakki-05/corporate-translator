@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiBriefcase, HiChatAlt2, HiPresentationChartLine, HiGlobeAlt, HiShieldCheck } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const WhyLearn = () => {
   const reasons = [
@@ -74,9 +75,12 @@ const WhyLearn = () => {
               <h3 className="text-2xl font-bold mb-2 text-white">Ready to start?</h3>
               <p className="text-white/80">Join the next cohort and stop being a 'normal' person.</p>
             </div>
-            <button className="mt-8 bg-white text-dark font-bold py-3 rounded-xl hover:bg-opacity-90 transition-all">
+            <Link 
+              to="/quiz"
+              className="mt-8 bg-white text-dark font-bold py-3 rounded-xl hover:bg-opacity-90 transition-all text-center"
+            >
               Claim Your Spot
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

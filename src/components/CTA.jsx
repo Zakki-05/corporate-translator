@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiArrowRight, HiCalendar } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
   return (
@@ -40,14 +41,14 @@ const CTA = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="btn-primary group flex items-center w-full sm:w-auto justify-center">
+              <Link to="/quiz" className="btn-primary group flex items-center w-full sm:w-auto justify-center">
                 Join Weekend Session
                 <HiCalendar className="ml-2" />
-              </button>
-              <button className="btn-secondary group flex items-center w-full sm:w-auto justify-center">
+              </Link>
+              <Link to="/dictionary" className="btn-secondary group flex items-center w-full sm:w-auto justify-center">
                 Start Learning Now
                 <HiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
 
             <p className="mt-8 text-sm text-white/30 italic">

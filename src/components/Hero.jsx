@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import { HiArrowRight, HiLightningBolt } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const FloatingWord = ({ text, delay, x, y, size = "text-sm" }) => (
   <motion.div
@@ -91,13 +92,13 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
         >
-          <button className="btn-primary group flex items-center">
+          <Link to="/quiz" className="btn-primary group flex items-center">
             Start Quiz
             <HiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="btn-secondary">
+          </Link>
+          <Link to="/dictionary" className="btn-secondary">
             Explore Dictionary
-          </button>
+          </Link>
         </motion.div>
 
         {/* Hero Card Visual */}
