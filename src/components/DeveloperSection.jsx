@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiExternalLink, HiCode, HiChip, HiLightningBolt } from 'react-icons/hi';
+import developerImg from '../developer.jpg.jpeg';
 
 const DeveloperSection = () => {
   return (
@@ -17,11 +18,15 @@ const DeveloperSection = () => {
           viewport={{ once: true }}
           className="relative group shrink-0"
         >
-          <div className="absolute -inset-1 bg-gradient-to-r from-accent-purple to-accent-cyan rounded-3xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-accent-purple to-accent-cyan rounded-3xl blur opacity-20 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative w-48 h-48 md:w-64 md:h-64 bg-dark rounded-3xl flex items-center justify-center overflow-hidden border border-white/10">
-             <div className="text-center">
-                <HiCode className="text-6xl text-accent-purple mx-auto mb-4" />
-                <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/40">Developer</span>
+             <img 
+               src={developerImg} 
+               alt="Mohammed Zakki Adnaan P" 
+               className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-accent-cyan">Creator</span>
              </div>
           </div>
         </motion.div>
